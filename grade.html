@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title></title>
+</head>
+<body>
+<input id="first">
+<button type="button" onclick="ifee()">判斷</button>
+<p id="demo"></p>
+<script type="text/javascript">
+	
+function ifee() {
+ 
+   x = parseInt( document.getElementById("first").value);
+   var text
+   if (x<60) {
+	text="不及格";
+	document.getElementById("demo").innerHTML = text;
+   }
+   else {
+   	text="及格";
+   	document.getElementById("demo").innerHTML = text;
+   }
+}
+
+</script>
+</body>
+</html>
